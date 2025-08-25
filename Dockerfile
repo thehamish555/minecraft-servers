@@ -8,8 +8,11 @@ ADD https://meta.fabricmc.net/v2/versions/loader/1.21.8/0.17.2/1.0.1/server/jar 
 
 RUN echo "eula=true" > eula.txt
 
-RUN mkdir -p /minecraft/mods
+RUN mkdir -p /minecraft/data
+
+COPY start.sh /minecraft/start.sh
+RUN chmod +x /minecraft/start.sh
 
 EXPOSE 25565
 
-ENTRYPOINT ["sh", "-c", "java -Xmx${RAM:-2G} -Xms${RAM:-2G} -jar fabric-server-launch.jar nogui"]
+ENTRYPOINT ["/minecraft/start.sh"]
