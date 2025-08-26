@@ -25,7 +25,7 @@ GAME_VERSION=${GAME_VERSION:-"Unknown"}
 
 ROOT_FOLDER_NAME=$(basename "$(pwd)")
 
-MOTD="&6&lHamcraft:&r &c&o${ROOT_FOLDER_NAME} Edition&r\n&5&n${GAME_VERSION}"
+MOTD="\\u00A76\\u00A7lHamcraft:\\u00A7r \\u00A7c\\u00A7o${ROOT_FOLDER_NAME} Edition\\u00A7r\\n\\u00A75\\u00A7n${GAME_VERSION}"
 
 sed -i "s/^motd=.*/motd=${MOTD}/" "$SERVER_PROPS"
 sed -i "s/^server-port=.*/server-port=${PORT}/" "$SERVER_PROPS"
