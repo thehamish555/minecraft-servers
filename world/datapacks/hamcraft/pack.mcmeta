@@ -1,7 +1,6 @@
 {
   "pack": {
     "description": "Datapack for all Hamcraft Servers",
-    "pack_format": 71,
-    "supported_formats": [71,71]
+    "pack_format": 	81
   }
 }

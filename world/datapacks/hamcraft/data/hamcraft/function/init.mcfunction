@@ -1,6 +1,6 @@
 scoreboard objectives add health health
 scoreboard objectives setdisplay below_name health
-scoreboard objectives modify health displayname {"text":"❤️","color":"red"}
+scoreboard objectives modify health displayname {"text":"❤","color":"red"}
 
 function blazeandcave:config/intro_msg_off
 function blazeandcave:config/item_rewards_off
