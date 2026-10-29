@@ -1,7 +1,7 @@
 {
   "pack": {
     "description": "Datapack for all Hamcraft Servers",
-    "min_format": 88,
-    "max_format": 88
+    "min_format": 121.0,
+    "max_format": 121.0
   }
 }
